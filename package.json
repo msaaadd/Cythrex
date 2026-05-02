@@ -11,6 +11,9 @@
     "lint": "tsc --noEmit",
     "start": "node server.ts"
   },
+  "engines": {
+    "node": ">=22.6.0"
+  },
   "dependencies": {
     "@google/genai": "^1.29.0",
     "@tailwindcss/typography": "^0.5.19",
