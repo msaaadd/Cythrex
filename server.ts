@@ -10,7 +10,9 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  const PORT = process.env.PORT || 3000;
+  // Cloud Run sets PORT environment variable, usually to 8080.
+  // In development, AI Studio strictly requires port 3000.
+  const PORT = process.env.NODE_ENV === "production" ? parseInt(process.env.PORT || "8080", 10) : 3000;
 
   app.use(cors());
   app.use(express.json());
