@@ -1,0 +1,6 @@
+{
+  "name": "Cythrex",
+  "description": "AI-powered Threat Intelligence Platform prototype for Google Cloud. Features IOC extraction, threat classification, and architecture overview.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
